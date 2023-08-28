@@ -9,8 +9,7 @@ genegate.onclick = () => {
 }
 
 copy.onclick = () => {
-{
-if(clipboard != undefined) 
+{ 
     navigator.clipboard.writeText(resultBtn.value).then(
         () => {
             alerts.classList.toggle('show')
@@ -19,7 +18,7 @@ if(clipboard != undefined)
             alert("something went wrong");
         },
       );
-    }
+    
    
 }
 
