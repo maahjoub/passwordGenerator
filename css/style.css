@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(177, 169, 169);
+}
+.main {
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 230px;
+  margin: 50px auto;
+}
+.main .head {
+  padding: 0 0 10px 0;
+  margin: 10px;
+  letter-spacing: -2px;
+  /* border-bottom: 1px solid #000; */
+  box-shadow: 0 5px 0 0 #f9f5f5;
+}
+.main .result {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #999;
+  width: 70%;
+  padding: 10px 10px 0;
+}
+.main .btn {
+  background-color: #4a1de7;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 7px;
+  color: white;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.main .generate {
+}
+.main .copy {
+  position: relative;
+  left: 113px;
+  top: -71px;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #8c80e0;
+  padding: 0 2px 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.alert {
+  position: absolute;
+  color: white;
+  background-color: rgb(32, 211, 32);
+  top: 15px;
+  right: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+}
+.show {
+  display: block !important;
+}
