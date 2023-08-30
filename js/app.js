@@ -1,4 +1,4 @@
-let  resultBtn = document.getElementById('result')
+var  resultBtn = document.getElementById('result')
 let  genegate = document.getElementById('genegate')
 let  copy = document.getElementById('copy')
 let  alerts = document.getElementById('alerts')
@@ -6,20 +6,6 @@ length  = 10;
 genegate.onclick = () => {
     password = makePassword(length)
     resultBtn.value = password
-}
-
-copy.onclick = () => {
-{ 
-    navigator.clipboard.writeText(resultBtn.value).then(
-        () => {
-            alerts.classList.toggle('show')
-        },
-        () => {
-            alert("something went wrong");
-        },
-      );
-    
-   
 }
 
 function makePassword(length) {
@@ -33,3 +19,14 @@ function makePassword(length) {
     }
     return result;
 }
+
+function myFunction() {
+    var copyed = resultBtn.value;
+    // Select the text field
+    resultBtn.select();
+    resultBtn.setSelectionRange(0, 99999); // For mobile devices
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyed);
+    // Alert the copied text
+    alert("Copied the text: " + copyed);
+  }
