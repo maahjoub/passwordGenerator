@@ -2,10 +2,14 @@ var  resultBtn = document.getElementById('result')
 let  genegate = document.getElementById('genegate')
 let  copy = document.getElementById('copy')
 let  alerts = document.getElementById('alerts')
+let  exits = document.getElementById('exit')
 length  = 10;
 genegate.onclick = () => {
     password = makePassword(length)
     resultBtn.value = password
+}
+exits.onclick = () => {
+  alerts.classList.remove('show')
 }
 
 function makePassword(length) {
@@ -28,5 +32,5 @@ function myFunction() {
     // Copy the text inside the text field
     navigator.clipboard.writeText(copyed);
     // Alert the copied text
-    alert("Copied the text: " + copyed);
+    alerts.classList.toggle('show')
   }
